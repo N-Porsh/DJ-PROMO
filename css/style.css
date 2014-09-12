@@ -238,12 +238,13 @@
 			form label
 			{
 				display: block;
-				text-transform: uppercase;
+				/* text-transform: uppercase; */
 				font-weight: 800;
 				letter-spacing: 0.04em;
-				color: #404248;
-				margin: 0 0 1em 0;
+				color: red;
+				/* margin: 0 0 1em 0; */
 				font-size: 0.8em;
+				margin-left: 10px;
 			}
 		
 			form input[type="text"],
@@ -256,7 +257,7 @@
 				display: block;
 				width: 100%;
 				border-radius: 8px;
-				border: solid 1px #eee;
+				border: solid 1px #CCC;
 			}
 
 				form input[type="text"]:focus,
@@ -969,3 +970,23 @@
 		{
 			color: inherit;
 		}
+		
+		
+		
+/* ======= Artur Edit ======= */
+.form-control {
+	margin: 10px;
+	border-radius: 5px;
+	width: 50%;
+}
+
+.input-group {
+	width: 50%;
+}
+.modal-footer {
+	margin-top: 10px;
+}
+
+.input-group-forgotpw {
+	margin-left: 10px;
+}
