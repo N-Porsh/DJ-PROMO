@@ -1,21 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	ZeroFour by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>DJ-Promo</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		
-		
-
-				
-		<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css"><!-- Optional theme -->
+		<!-- CSS: -->
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -23,11 +13,11 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
 		
 		
 		
-		
-		
+		<!-- JS: -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- Latest compiled and minified JavaScript -->
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -38,6 +28,7 @@
 		
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/additional-methods.min.js"></script>
+		<script src="js/custom/client-side.js"></script>
 
 	</head>
 	<body class="right-sidebar">
@@ -381,77 +372,63 @@
 			</div>
 			
 
-														<!-- Modal -->
-												<div id="SignInOrReg" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-													<div class="modal-dialog">
-														<div class="modal-content">
-															<div class="modal-header">
-															
-																	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-																
-																	<ul class="nav nav-tabs" role="tablist">
-																		<li class="active"><a href="#signin" data-toggle="tab">Sign in</a></li>
-																		<li><a href="#registration" data-toggle="tab">Registration</a></li>
-																	</ul>
-															
-																	<div class="tab-content">
-																		<div class="tab-pane active" id="signin">
-																			<form action="#" method="get">
-																				<div class="input-group">
-																					<input type="text" class="form-control" placeholder="Username" maxlength="45" required>
-																					<input type="password" class="form-control" placeholder="Password" maxlength="254" required>
-																					<a href="#forgotpassword" data-toggle="tab" class="input-group-forgotpw">Forgot password</a>
-																				</div>
-																				<div class="modal-footer">
-																					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																					<button type="submit" name="submit_signin" class="btn btn-primary">Sign in</button>
-																				</div>
-																			</form>
-																		</div>
-																		
-																		<div class="tab-pane" id="registration">
-																			<form id="reg_form">
-																				<div class="input-group">
-																				  <input type="text" class="form-control" placeholder="Username" name="username" maxlength="45" pattern="[a-zA-Z0-9]+">
-																				  <input type="email" class="form-control" placeholder="E-mail" maxlength="65" name="emailadress">
-																				  <input type="password" class="form-control" placeholder="Password" id="password" name="password" maxlength="254">
-																				  <input type="password" class="form-control" placeholder="Re-Password" id="password_again" name="password_again" maxlength="254">
-																				</div>
-																				<div class="modal-footer">
-																					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																					<button type="submit" class="btn btn-primary">Create</button>
-																				</div>
-																			</form>
-																		</div>
-																		<script>
-																			jQuery.validator.setDefaults({ debug: true, success: "valid" });
-																				$( "#reg_form" ).validate({
-																					rules: {
-																						password: "required",
-																						password_again: {
-																						equalTo: "#password"
-																						},
-																						username: {  minlength: 2 },
-																						emailadress: "required",
-																						password: { minlength: 6 }
-																					}
-																				});
-																		</script>
-																		
-																		<div class="tab-pane" id="forgotpassword">
-																			<div class="input-group">
-																				<input type="email" class="form-control" placeholder="Please write your e-mail..." maxlength="65" required>
-																				<a href="#signin" data-toggle="tab" class="input-group-forgotpw">Return...</a>
-																			</div>
-																			<div class="modal-footer">
-																				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																				<button type="button" class="btn btn-primary">Send</button>
-																			</div>
-																		</div>
-																	</div>
-															</div>
-														</div>
-													</div>
-												</div>
+					<!-- Modal -->
+			<div id="SignInOrReg" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active"><a href="#signin" data-toggle="tab">Sign in</a></li>
+									<li><a href="#registration" data-toggle="tab">Registration</a></li>
+								</ul>
+						
+								<div class="tab-content">
+									<div class="tab-pane active" id="signin">
+										<form action="#" method="get">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Username" maxlength="45" required>
+												<input type="password" class="form-control" placeholder="Password" maxlength="254" required>
+												<a href="#forgotpassword" data-toggle="tab" class="input-group-forgotpw">Forgot password</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" name="submit_signin" class="btn btn-primary">Sign in</button>
+											</div>
+										</form>
+									</div>
+									
+									<div class="tab-pane" id="registration">
+										<form id="reg_form">
+											<div class="input-group">
+											  <input type="text" class="form-control" placeholder="Username" name="username" maxlength="45" >
+											  <input type="email" class="form-control" placeholder="E-mail" maxlength="65" name="emailadress">
+											  <input type="password" class="form-control" placeholder="Password" id="password" name="password" maxlength="254">
+											  <input type="password" class="form-control" placeholder="Re-Password" id="password_again" name="password_again" maxlength="254">
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" class="btn btn-primary">Create</button>
+											</div>
+										</form>
+									</div>
+									
+									<div class="tab-pane" id="forgotpassword">
+										<div class="input-group">
+											<input type="email" class="form-control" placeholder="Please write your e-mail..." maxlength="65" required>
+											<a href="#signin" data-toggle="tab" class="input-group-forgotpw">Return...</a>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Send</button>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	</body>
 </html>
