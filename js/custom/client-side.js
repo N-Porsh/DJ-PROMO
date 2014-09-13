@@ -8,7 +8,7 @@ jQuery( document ).ready(function( $ ) {
 			username: {
 				required: true,
 				minlength: 2,
-				pattern: '^[A-Za-z0-9]+$', // As string
+				pattern: '^[A-Za-z0-9]+$'
 			},
 			
 			emailadress: "required",																					
@@ -18,7 +18,7 @@ jQuery( document ).ready(function( $ ) {
 				minlength: 6
 			},
 			password_again: {
-			equalTo: "#password"
+				equalTo: "#password"
 			}																						
 		}
 	});
