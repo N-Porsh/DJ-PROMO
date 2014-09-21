@@ -31,18 +31,18 @@
 	{
 		padding: 3em 0;
 	}
-	
+
 	#banner-wrapper
 	{
 	}
-	
+
 	#main-wrapper
 	{
 	}
 
 	#footer-wrapper
 	{
-		padding: 7em 0 7em 0;
+		padding: 1em 0 0 0;
 	}
 
 	.wrapper
@@ -77,7 +77,7 @@
 			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.45), inset 0px 2px 1px 0px rgba(255,255,255,0.15);
 			text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
 		}
-	
+
 		#header h1
 		{
 			position: absolute;
@@ -99,13 +99,13 @@
 		top: 0;
 		line-height: 5.5em;
 	}
-	
+
 		#nav > ul > li
 		{
 			float: left;
 			padding: 0 0.8em 0 0.8em;
 		}
-		
+
 			#nav > ul > li > a,
 			#nav > ul > li > span
 			{
@@ -164,7 +164,7 @@
 			margin-top: -2px;
 			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 2px 14px 0px rgba(0,0,0,0.4);
 		}
-		
+
 		.dropotron a,
 		.dropotron span
 		{
@@ -176,7 +176,7 @@
 			letter-spacing: 0.075em;
 			outline: 0;
 		}
-		
+
 		.dropotron li:hover > a,
 		.dropotron li:hover > span
 		{
@@ -194,11 +194,11 @@
 		overflow: hidden;
 		padding: 9em 0 6em 0;
 	}
-	
+
 		#banner h2
 		{
 		}
-		
+
 		#banner p
 		{
 			float: left;
