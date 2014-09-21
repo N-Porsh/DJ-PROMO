@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DJ-Promo</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!-- CSS: -->
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/custom_styles.css"><!-- Latest compiled and minified CSS -->
+
+
+
+		<!-- JS: -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/additional-methods.min.js"></script>
+		<script src="js/custom/client-side.js"></script>
+
+	</head>
+	<body class="right-sidebar">
+
+
+			<!-- Modal -->
+			<div id="SignInOrReg" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active"><a href="#signin" data-toggle="tab">SIGN IN</a></li>
+									<li><a href="#registration" data-toggle="tab">REGISTRATION</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div class="tab-pane active" id="signin">
+										<form role="form" id="user_auth">
+											<br>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="name">Name</label>
+													<input type="text" class="form-control" placeholder="Username" name="username" id="username" maxlength="45" >
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="log_pw">Password</label>
+													<input type="password" class="form-control" placeholder="Password" name="log_pw" id="log_pw" maxlength="64" >
+												</div>
+												<a href="#forgotpassword" data-toggle="tab" class="input-group-forgotpw">Forgot password ?</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" name="submit_signin" class="btn btn-primary">Sign in</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane" id="registration">
+										<form role="form" id="reg_form">
+											<br>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="username">username</label>
+													<input type="text" class="form-control" placeholder="Username" name="username" maxlength="45" >
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="email">Email</label>
+													<input type="email" class="form-control" placeholder="E-mail" maxlength="65" name="emailadress">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="reg_pw">Password</label>
+													<input type="password" class="form-control" placeholder="Password" id="reg_pw" name="reg_pw" maxlength="64">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="password_again">Password again</label>
+													<input type="password" class="form-control" placeholder="Re-Password" id="password_again" name="password_again" maxlength="64">
+												</div>
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" class="btn btn-primary">Register</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane" id="forgotpassword">
+										<form role="form" id="auth_restore">
+											<br>
+											<div class="form-group">
+												<div class="input-group">
+													<label  for="email_restore">Forgot password ?</label>
+													<input type="email" class="form-control" placeholder="Your e-mail address" maxlength="65" required>
+												</div>
+												<a href="#signin" data-toggle="tab" class="input-group-forgotpw">Back</a>
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" class="btn btn-primary">Restore password</button>
+											</div>
+										</form>
+
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Header -->
+								<header id="header">
+									<div class="inner">
+
+										<!-- Logo -->
+											<h1><a href="index.html" id="logo">DJ-PROMO</a></h1>
+
+										<!-- Nav -->
+											<nav id="nav">
+												<ul>
+													<li class="current_page_item"><a href="index.html">Home</a></li>
+													<li><a href="news.html">News</a></li>
+													<li><a href="#">About us</a></li>
+													<li><a href="#">Contact</a></li>
+												</ul>
+											</nav>
+
+									</div>
+								</header>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="wrapper style2">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="8u">
+									<div id="content">
+
+										<!-- Content -->
+
+											<article>
+												<header class="major">
+													<h2>Promotion service for you and free!</h2>
+													<p>Just register and earn?!</p>
+												</header>
+
+
+
+												<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+												Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+												Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+												consequat etiam lorem ipsum dolor sit amet nullam.</p>
+
+												<h3>More intriguing information</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
+												justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
+												ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
+												vulputate. Nulla quis nibh ipsum, sed egestas justo. </p>
+
+												<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
+												quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
+												Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt..</p>
+											</article>
+
+									</div>
+								</div>
+								<div class="4u">
+									<div id="sidebar">
+
+										<!-- Sidebar -->
+											<section>
+
+												<!--<a href="#" title="authentication" class="button  alt icon fa-sign-in">Sign in / Register</a>-->
+
+												<a data-toggle="modal" data-target="#SignInOrReg" class="button alt icon fa-sign-in">Sign in / Register</a>
+
+
+											</section>
+											<section>
+												<header class="major">
+
+													<h2 class="icon fa-file-text-o">News</h2>
+												</header>
+												<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+												Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
+												Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
+												consequat etiam.</p>
+												<footer>
+													<a href="#" class="button icon fa-info-circle">Find out more</a>
+												</footer>
+											</section>
+
+											<section>
+												<header class="major">
+													<h2 class="icon fa-file-text-o">popular</h2>
+												</header>
+												<ul class="style2">
+													<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+													<li><a href="#">Ornare in hendrerit in lectus</a></li>
+													<li><a href="#">Semper mod quis eget mi dolore</a></li>
+													<li><a href="#">Quam turpis feugiat sit dolor</a></li>
+													<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
+													<li><a href="#">Semper mod quisturpis nisi</a></li>
+													<li><a href="#">Consequat etiam lorem phasellus</a></li>
+													<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
+													<li><a href="#">Semper mod quisturpis nisi</a></li>
+												</ul>
+												<footer>
+													<a href="#" class="button icon fa-info-circle">Find out more</a>
+												</footer>
+											</section>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="3u">
+
+							<!-- Links -->
+								<section>
+									<h2>Filler Links</h2>
+									<ul class="divided">
+										<li><a href="#">Quam turpis feugiat dolor</a></li>
+										<li><a href="#">Amet ornare in hendrerit </a></li>
+										<li><a href="#">Semper mod quisturpis nisi</a></li>
+										<li><a href="#">Semper mod quisturpis nisi</a></li>
+									</ul>
+								</section>
+
+						</div>
+						<div class="3u">
+
+							<!-- Links -->
+								<section>
+									<h2>More Filler</h2>
+									<ul class="divided">
+										<li><a href="#">Quam turpis feugiat dolor</a></li>
+										<li><a href="#">Amet ornare in in lectus</a></li>
+										<li><a href="#">Semper mod quisturpis nisi</a></li>
+										<li><a href="#">Semper mod sed tempus nisi</a></li>
+									</ul>
+								</section>
+
+
+						</div>
+						<div class="6u">
+
+							<!-- Contact -->
+								<section>
+									<h2>Get in touch</h2>
+									<div>
+										<div class="row">
+											<div class="6u">
+												<dl class="contact">
+													<dt>Twitter</dt>
+													<dd><a href="#">@untitled-corp</a></dd>
+													<dt>Facebook</dt>
+													<dd><a href="#">facebook.com/untitled</a></dd>
+													<dt>WWW</dt>
+													<dd><a href="#">untitled.tld</a></dd>
+													<dt>Email</dt>
+													<dd><a href="#">user@untitled.tld</a></dd>
+												</dl>
+											</div>
+											<div class="6u">
+												<dl class="contact">
+													<dt>Address</dt>
+													<dd>
+														1234 Fictional Rd<br />
+														Nashville, TN 00000-0000<br />
+														USA
+													</dd>
+													<dt>Phone</dt>
+													<dd>(000) 000-0000</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+
+	</body>
+</html>
