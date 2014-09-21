@@ -33,6 +33,112 @@
 	</head>
 	<body class="right-sidebar">
 
+
+			<!-- Modal -->
+			<div id="SignInOrReg" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active"><a href="#signin" data-toggle="tab">SIGN IN</a></li>
+									<li><a href="#registration" data-toggle="tab">REGISTRATION</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div class="tab-pane active" id="signin">
+										<form role="form">
+											<br>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="name">Name</label>
+													<input type="text" class="form-control" placeholder="Username" id="name" maxlength="45" required>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="password">Password</label>
+													<input type="password" class="form-control" placeholder="Password" maxlength="254" required>
+												</div>
+												<a href="#forgotpassword" data-toggle="tab" class="input-group-forgotpw">Forgot password ?</a>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" name="submit_signin" class="btn btn-primary">Sign in</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane" id="registration">
+										<form role="form" id="reg_form">
+											<br>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="username">username</label>
+													<input type="text" class="form-control" placeholder="Username" name="username" maxlength="45" >
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="email">Email</label>
+													<input type="email" class="form-control" placeholder="E-mail" maxlength="65" name="emailadress">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="password">Password</label>
+													<input type="password" class="form-control" placeholder="Password" id="password" name="password" maxlength="254">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<label class="sr-only" for="password2">Password again</label>
+													<input type="password" class="form-control" placeholder="Re-Password" id="password_again" name="password_again" maxlength="254">
+												</div>
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" class="btn btn-primary">Register</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane" id="forgotpassword">
+										<form role="form">
+											<br>
+											<div class="form-group">
+												<div class="input-group">
+													<label  for="email_restore">Forgot password ?</label>
+													<input type="email" class="form-control" placeholder="Your e-mail address" maxlength="65" required>
+												</div>
+												<a href="#signin" data-toggle="tab" class="input-group-forgotpw">Back</a>
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Restore password</button>
+											</div>
+										</form>
+
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
 		<!-- Header Wrapper -->
 			<div id="header-wrapper">
 				<div class="container">
@@ -255,63 +361,5 @@
 			</div>
 
 
-					<!-- Modal -->
-			<div id="SignInOrReg" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-
-								<ul class="nav nav-tabs" role="tablist">
-									<li class="active"><a href="#signin" data-toggle="tab">Sign in</a></li>
-									<li><a href="#registration" data-toggle="tab">Registration</a></li>
-								</ul>
-
-								<div class="tab-content">
-									<div class="tab-pane active" id="signin">
-										<form action="#" method="get">
-											<div class="input-group">
-												<input type="text" class="form-control" placeholder="Username" maxlength="45" required>
-												<input type="password" class="form-control" placeholder="Password" maxlength="254" required>
-												<a href="#forgotpassword" data-toggle="tab" class="input-group-forgotpw">Forgot password</a>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-												<button type="submit" name="submit_signin" class="btn btn-primary">Sign in</button>
-											</div>
-										</form>
-									</div>
-
-									<div class="tab-pane" id="registration">
-										<form id="reg_form">
-											<div class="input-group">
-											  <input type="text" class="form-control" placeholder="Username" name="username" maxlength="45" >
-											  <input type="email" class="form-control" placeholder="E-mail" maxlength="65" name="emailadress">
-											  <input type="password" class="form-control" placeholder="Password" id="password" name="password" maxlength="254">
-											  <input type="password" class="form-control" placeholder="Re-Password" id="password_again" name="password_again" maxlength="254">
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-												<button type="submit" class="btn btn-primary">Create</button>
-											</div>
-										</form>
-									</div>
-
-									<div class="tab-pane" id="forgotpassword">
-										<div class="input-group">
-											<input type="email" class="form-control" placeholder="Please write your e-mail..." maxlength="65" required>
-											<a href="#signin" data-toggle="tab" class="input-group-forgotpw">Return...</a>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Send</button>
-										</div>
-									</div>
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
 	</body>
 </html>
