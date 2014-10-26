@@ -79,10 +79,10 @@
 									<ul class="nav nav-pills nav-stacked">
 									  <li><a href="dashboard.html">Dashboard</a></li>
 									  <li><a href="my_profile.html">My Profile</a></li>
-									  <li class="active"><a href="labels.html">Labels</a></li>
+									  <li><a href="labels.html">Labels</a></li>
 									  <li><a href="artists.html">Artists</a></li>
 									  <li><a href="promote.html">Promote</a></li>
-									  <li><a href="support.html">Support</a></li>
+									  <li class="active"><a href="support.html">Support</a></li>
 									</ul>
 								</div>
 
@@ -93,34 +93,52 @@
 
 										<article id="profile_data">
 											<header>
-												<h2>My labels</h2>
-												<p>Add / Edit your label</p>
+												<h2>Support</h2>
+												<p>If you have any questions, please contact us</p>
 											</header>
 
 											<form  class="form-horizontal" >
 
-										        <div class="form-group">
-										            <label for="usr_label" class="control-label col-xs-4">Label name</label>
+								        		<div class="form-group">
+									            	<label for="support_topic" class="control-label col-xs-4">Topic</label>
 										            <div class="col-xs-7">
-										                <input type="text" class="form-control" id="usr_label" placeholder="Your label name...">
+										                <select class="form-control" id="support_topic">
+														  <option>Choose topic</option>
+														  <option>Service problem</option>
+														  <option>Website bug</option>
+														  <option>Other</option>
+														</select>
 										            </div>
 										        </div>
 
-												<div class="form-group">
-												    <label for="exampleInputFile" class="control-label col-xs-4">Label picture</label>
-												    <div class="col-xs-7">
-													    <input type="file" id="exampleInputFile">
-													    <p class="help-block">Example block-level help text here.</p>
-												    </div>
-
-												</div>
+										        <div class="form-group">
+										            <label for="support_descr" class="control-label col-xs-4">Description</label>
+										            <div class="col-xs-7">
+										                <textarea class="form-control" id="support_descr" rows="5"></textarea>
+										            </div>
+										        </div>
 
 										        <div class="form-group">
 										            <div class="col-xs-offset-4 col-xs-4">
-										                <button type="submit" class="btn btn-primary">Add label</button>
+										                <button type="submit" class="btn btn-primary">Send</button>
 										            </div>
 										        </div>
 
+											</form>
+										</article>
+
+										<article id="profile_data">
+											<header>
+												<p>via E-mail</p>
+											</header>
+
+											<form class="form-horizontal" >
+									        	<div class="form-group">
+										            <label class="control-label col-xs-4">E-Mail</label>
+										            <div class="col-xs-7">
+										                <p class="form-control-static"><a href="mailto:dj-promo@djpromo.com?subject=support" "email me">dj-promo@djpromo.com</a></p>
+										            </div>
+										        </div>
 											</form>
 										</article>
 
