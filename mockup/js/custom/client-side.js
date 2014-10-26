@@ -41,7 +41,7 @@ jQuery( document ).ready(function( $ ) {
 				minlength: 6
 			}
 		},
-		submitHandler: function() { alert("Submitted!") }
+		submitHandler: function() { location.href="dashboard.html"; }
 	});
 	$( "#auth_restore" ).validate({
 		rules: {

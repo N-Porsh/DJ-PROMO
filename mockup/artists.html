@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DJ-Promo</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!-- CSS: -->
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/custom_styles.css"><!-- Latest compiled and minified CSS -->
+
+
+
+		<!-- JS: -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/additional-methods.min.js"></script>
+		<script src="js/custom/client-side.js"></script>
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+
+							<!-- Header -->
+								<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">DJ-PROMO</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li><a href="news.html">News</a></li>
+												<li><a href="#">About us</a></li>
+												<li><a href="#">Contact</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="wrapper style2">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="3u">
+									<ul class="nav nav-pills nav-stacked">
+									  <li><a href="dashboard.html">Dashboard</a></li>
+									  <li><a href="my_profile.html">My Profile</a></li>
+									  <li><a href="labels.html">Labels</a></li>
+									  <li class="active"><a href="artists.html">Artists</a></li>
+									  <li><a href="promote.html">Promote</a></li>
+									  <li><a href="support.html">Support</a></li>
+									</ul>
+								</div>
+
+								<div class="6u skel-cell-important">
+									<div id="content">
+
+										<!-- Content -->
+
+										<article id="profile_data">
+											<header>
+												<h2>Artists</h2>
+												<p>Add / Edit artist</p>
+											</header>
+
+
+											<!-- Nav tabs -->
+											<ul class="nav nav-tabs text-uppercase" role="tablist">
+											  <li class="active"><a href="#artists" role="tab" data-toggle="tab">Artists</a></li>
+											  <li><a href="#new_artist" role="tab" data-toggle="tab">New artist</a></li>
+											</ul>
+
+											<div class="tab-content">
+											  <div class="tab-pane fade in active" id="artists">
+											  	<br>
+											  	<table class="table table-hover">
+												  	<thead>
+													  	<tr>
+													  		<th>#</th>
+													  		<th>Artist name</th>
+													  	</tr>
+												  	</thead>
+												  	<tbody>
+													  	<tr>
+													    	<td>1</td>
+													    	<td>Bixxy</td>
+													    </tr>
+													    <tr>
+													    	<td>2</td>
+													    	<td>Frik</td>
+													    </tr>
+													    <tr>
+													    	<td>3</td>
+													    	<td>Tiesto</td>
+													    </tr>
+												  	</tbody>
+											  	</table>
+
+											  </div>
+											  <div class="tab-pane fade" id="new_artist">
+												<br>
+												<form class="form-horizontal" >
+
+													<section>
+														<header>
+															<p>Artist Details:</p>
+														</header>
+												        <div class="form-group">
+												            <label for="art_alias" class="control-label col-xs-4">Alias Name <span class="text-danger">*</span></label>
+												            <div class="col-xs-7">
+												                <input type="text" class="form-control" id="art_alias" placeholder="Enter alias name">
+												            </div>
+												        </div>
+
+												        <div class="form-group">
+												            <label for="art_web" class="control-label col-xs-4">Website</label>
+												            <div class="col-xs-7">
+												                <input type="text" class="form-control" id="art_web" placeholder="Your website URL">
+												            </div>
+												        </div>
+
+										       			 <div class="form-group">
+												            <label class="control-label col-xs-4">Type</label>
+												            <div class="col-xs-7">
+				                						        <label class="radio-inline">
+																  <input type="radio" name="art_type" id="art_rad_1" value="1">Label Artist
+																</label>
+																<label class="radio-inline">
+																  <input type="radio" name="art_type" id="art_rad_2" value="2">Guest Remixer
+																</label>
+												            </div>
+												        </div>
+													</section>
+
+													<section>
+														<header>
+															<p>Social Networking Links:</p>
+														</header>
+														<div class="row">
+														  <div class="col-xs-6">
+
+							        						<div class="form-group">
+													            <label for="art_soc_myspace" class="control-label col-xs-5">Myspace</label>
+													            <div class="col-xs-12">
+													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Myspace URL">
+													            </div>
+													        </div>
+							        						<div class="form-group">
+													            <label for="art_soc_myspace" class="control-label col-xs-5">Facebook</label>
+													            <div class="col-xs-12">
+													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Facebook URL">
+													            </div>
+													        </div>
+							        						<div class="form-group">
+													            <label for="art_soc_myspace" class="control-label col-xs-5">YouTube</label>
+													            <div class="col-xs-12">
+													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="YouTube URL">
+													            </div>
+													        </div>
+
+														  </div>
+														  <div class="col-xs-6">
+							        						<div class="form-group">
+													            <label for="art_soc_myspace" class="control-label col-xs-5">SoundCloud</label>
+													            <div class="col-xs-12">
+													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="SoundCloud URL">
+													            </div>
+													        </div>
+							        						<div class="form-group">
+													            <label for="art_soc_myspace" class="control-label col-xs-5">Twitter</label>
+													            <div class="col-xs-12">
+													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Twitter URL">
+													            </div>
+													        </div>
+							        						<div class="form-group">
+													            <label for="art_soc_myspace" class="control-label col-xs-5">Blog/RSS</label>
+													            <div class="col-xs-12">
+													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Blog/RSS URL">
+													            </div>
+													        </div>
+														  </div>
+														</div>
+
+													</section>
+													<section>
+														<header>
+															<p>Artist Information:</p>
+														</header>
+												        <div class="form-group">
+												            <label for="art_biography" class="control-label col-xs-4">biography</label>
+												            <div class="col-xs-12">
+												                <textarea class="form-control" id="art_biography" rows="7"></textarea>
+												            </div>
+												        </div>
+
+														<div class="row">
+														  <div class="col-xs-7">
+					  											<div class="form-group">
+																    <label for="exampleInputFile" class="control-label col-xs-5">Artist image</label>
+																    <div class="col-xs-7">
+																	    <input type="file" id="exampleInputFile">
+																	    <p class="help-block">Upload artist image (optional)</p>
+																    </div>
+																</div>
+														  </div>
+														  <div class="col-xs-4">
+														  	<img src="images/profile.jpg" alt="..." class="img-rounded">
+														  </div>
+														</div>
+													</section>
+
+											        <div class="form-group">
+											            <div class=" col-xs-12">
+											                <button type="submit" class="btn btn-primary">Save new Artist</button>
+											            </div>
+											        </div>
+
+												</form>
+											  </div>
+
+											</div>
+										</article>
+
+									</div>
+								</div>
+
+								<div class="3u skel-cell-important">
+									<div id="content">
+										<div class="box feature1">
+
+											<section>
+												<a href="#" class="image featured"><img src="images/pic03.jpg" alt=""></a>
+												<header class="second icon fa-bar-chart-o">
+													<h5>Another Heading</h5>
+													<p>And yes, a subtitle</p>
+												</header>
+											</section>
+
+											<section>
+												<a href="#" class="image featured"><img src="images/pic03.jpg" alt=""></a>
+												<header class="second icon fa-bar-chart-o">
+													<h5>Another Heading</h5>
+												</header>
+											</section>
+
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="3u">
+
+							<!-- Links -->
+								<section>
+									<h2>Filler Links</h2>
+									<ul class="divided">
+										<li><a href="#">Quam turpis feugiat dolor</a></li>
+										<li><a href="#">Amet ornare in hendrerit </a></li>
+										<li><a href="#">Semper mod quisturpis nisi</a></li>
+										<li><a href="#">Semper mod quisturpis nisi</a></li>
+									</ul>
+								</section>
+
+						</div>
+						<div class="3u">
+
+							<!-- Links -->
+								<section>
+									<h2>More Filler</h2>
+									<ul class="divided">
+										<li><a href="#">Quam turpis feugiat dolor</a></li>
+										<li><a href="#">Amet ornare in in lectus</a></li>
+										<li><a href="#">Semper mod quisturpis nisi</a></li>
+										<li><a href="#">Semper mod sed tempus nisi</a></li>
+									</ul>
+								</section>
+
+
+						</div>
+						<div class="6u">
+
+							<!-- Contact -->
+								<section>
+									<h2>Get in touch</h2>
+									<div>
+										<div class="row">
+											<div class="6u">
+												<dl class="contact">
+													<dt>Twitter</dt>
+													<dd><a href="#">@untitled-corp</a></dd>
+													<dt>Facebook</dt>
+													<dd><a href="#">facebook.com/untitled</a></dd>
+													<dt>WWW</dt>
+													<dd><a href="#">untitled.tld</a></dd>
+													<dt>Email</dt>
+													<dd><a href="#">user@untitled.tld</a></dd>
+												</dl>
+											</div>
+											<div class="6u">
+												<dl class="contact">
+													<dt>Address</dt>
+													<dd>
+														1234 Fictional Rd<br />
+														Nashville, TN 00000-0000<br />
+														USA
+													</dd>
+													<dt>Phone</dt>
+													<dd>(000) 000-0000</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+
+	</body>
+</html>
