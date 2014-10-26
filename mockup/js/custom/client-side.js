@@ -1,4 +1,7 @@
 jQuery( document ).ready(function( $ ) {
+	// INIT ALWAYS:
+	$('.toolt').tooltip();
+
 	/*
 	* Registration validator:
 	*/
@@ -46,5 +49,9 @@ jQuery( document ).ready(function( $ ) {
 		},
 		submitHandler: function() { alert("Submitted!") }
 	});
+
+
+
+
 
 });

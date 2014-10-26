@@ -1,3 +1,6 @@
 .form-group .input-group {
     width: 45%;
 }
+#profile_data .form-horizontal .control-label{
+    text-align: left;
+}
