@@ -80,8 +80,8 @@
 									  <li><a href="dashboard.html">Dashboard</a></li>
 									  <li><a href="my_profile.html">My Profile</a></li>
 									  <li><a href="labels.html">Labels</a></li>
-									  <li class="active"><a href="artists.html">Artists</a></li>
-									  <li><a href="promote.html">Promote</a></li>
+									  <li><a href="artists.html">Artists</a></li>
+									  <li class="active"><a href="promote.html">Promote</a></li>
 									  <li><a href="#"><span class="badge pull-right">4</span>Messages</a></li>
 									  <li><a href="support.html">Support</a></li>
 									</ul>
@@ -94,166 +94,151 @@
 
 										<article id="profile_data">
 											<header>
-												<h2>Artists</h2>
-												<p>Add / Edit artist</p>
+												<h2>Promote</h2>
+												<p>Promote New Release</p>
 											</header>
 
+											<form  class="form-horizontal" >
 
-											<!-- Nav tabs -->
-											<ul class="nav nav-tabs text-uppercase" role="tablist">
-											  <li class="active"><a href="#artists" role="tab" data-toggle="tab">Artists</a></li>
-											  <li><a href="#new_artist" role="tab" data-toggle="tab">New artist</a></li>
-											</ul>
+												<section>
 
-											<div class="tab-content">
-											  <div class="tab-pane fade in active" id="artists">
-											  	<br>
-											  	<table class="table table-hover">
-												  	<thead>
-													  	<tr>
-													  		<th>#</th>
-													  		<th>Artist name</th>
-													  	</tr>
-												  	</thead>
-												  	<tbody>
-													  	<tr>
-													    	<td>1</td>
-													    	<td>Bixxy</td>
-													    </tr>
-													    <tr>
-													    	<td>2</td>
-													    	<td>Frik</td>
-													    </tr>
-													    <tr>
-													    	<td>3</td>
-													    	<td>Tiesto</td>
-													    </tr>
-												  	</tbody>
-											  	</table>
-
-											  </div>
-											  <div class="tab-pane fade" id="new_artist">
-												<br>
-												<form class="form-horizontal" >
-
-													<section>
-														<header>
-															<p>Artist Details:</p>
-														</header>
-												        <div class="form-group">
-												            <label for="art_alias" class="control-label col-xs-4">Alias Name <span class="text-danger">*</span></label>
-												            <div class="col-xs-7">
-												                <input type="text" class="form-control" id="art_alias" placeholder="Enter alias name">
-												            </div>
-												        </div>
+													<div class="row">
+													  <div class="col-xs-6">
 
 												        <div class="form-group">
-												            <label for="art_web" class="control-label col-xs-4">Website</label>
-												            <div class="col-xs-7">
-												                <input type="text" class="form-control" id="art_web" placeholder="Your website URL">
-												            </div>
-												        </div>
-
-										       			 <div class="form-group">
-												            <label class="control-label col-xs-4">Type</label>
-												            <div class="col-xs-7">
-				                						        <label class="radio-inline">
-																  <input type="radio" name="art_type" id="art_rad_1" value="1">Label Artist
-																</label>
-																<label class="radio-inline">
-																  <input type="radio" name="art_type" id="art_rad_2" value="2">Guest Remixer
-																</label>
-												            </div>
-												        </div>
-													</section>
-
-													<section>
-														<header>
-															<p>Social Networking Links:</p>
-														</header>
-														<div class="row">
-														  <div class="col-xs-6">
-
-							        						<div class="form-group">
-													            <label for="art_soc_myspace" class="control-label col-xs-5">Myspace</label>
-													            <div class="col-xs-12">
-													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Myspace URL">
-													            </div>
-													        </div>
-							        						<div class="form-group">
-													            <label for="art_soc_myspace" class="control-label col-xs-5">Facebook</label>
-													            <div class="col-xs-12">
-													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Facebook URL">
-													            </div>
-													        </div>
-							        						<div class="form-group">
-													            <label for="art_soc_myspace" class="control-label col-xs-5">YouTube</label>
-													            <div class="col-xs-12">
-													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="YouTube URL">
-													            </div>
-													        </div>
-
-														  </div>
-														  <div class="col-xs-6">
-							        						<div class="form-group">
-													            <label for="art_soc_myspace" class="control-label col-xs-5">SoundCloud</label>
-													            <div class="col-xs-12">
-													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="SoundCloud URL">
-													            </div>
-													        </div>
-							        						<div class="form-group">
-													            <label for="art_soc_myspace" class="control-label col-xs-5">Twitter</label>
-													            <div class="col-xs-12">
-													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Twitter URL">
-													            </div>
-													        </div>
-							        						<div class="form-group">
-													            <label for="art_soc_myspace" class="control-label col-xs-5">Blog/RSS</label>
-													            <div class="col-xs-12">
-													                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Blog/RSS URL">
-													            </div>
-													        </div>
-														  </div>
-														</div>
-
-													</section>
-													<section>
-														<header>
-															<p>Artist Information:</p>
-														</header>
-												        <div class="form-group">
-												            <label for="art_biography" class="control-label col-xs-4">biography</label>
+												            <label for="usr_label" class="control-label col-xs-12">Release Artist Name <span class="text-danger">*</span></label>
 												            <div class="col-xs-12">
-												                <textarea class="form-control" id="art_biography" rows="7"></textarea>
+												                <input type="text" class="form-control" id="usr_label" placeholder="Release Artist Name...">
 												            </div>
 												        </div>
 
-														<div class="row">
-														  <div class="col-xs-7">
-					  											<div class="form-group">
-																    <label for="exampleInputFile" class="control-label col-xs-5">Artist image</label>
-																    <div class="col-xs-7">
-																	    <input type="file" id="exampleInputFile">
-																	    <p class="help-block">Upload artist image (optional)</p>
-																    </div>
-																</div>
-														  </div>
-														  <div class="col-xs-4">
-														  	<img src="images/profile.jpg" alt="..." class="img-rounded">
-														  </div>
-														</div>
-													</section>
+												        <div class="form-group">
+												            <label for="usr_label" class="control-label col-xs-12">Release Name <span class="text-danger">*</span></label>
+												            <div class="col-xs-12">
+												                <input type="text" class="form-control" id="usr_label" placeholder="Release Name...">
+												            </div>
+												        </div>
 
-											        <div class="form-group">
-											            <div class=" col-xs-12">
-											                <button type="submit" class="btn btn-primary">Save new Artist</button>
+												        <div class="form-group">
+												            <label for="usr_country" class="control-label col-xs-12">Record Label</label>
+												            <div class="col-xs-12">
+												                <select class="form-control" id="usr_country">
+																  <option>Choose Record Label...</option>
+																  <option>Syndicate Recordings</option>
+																  <option>Funny recordings</option>
+																  <option>Promo recordings</option>
+																  <option>Future JK</option>
+																</select>
+												            </div>
+												        </div>
+
+													<div class="form-group">
+											            <label class="control-label col-xs-12">Release Type</label>
+											            <div class="col-xs-12">
+			                						        <label class="radio-inline">
+															  <input type="radio" name="art_type" id="art_rad_1" value="1">Single
+															</label>
+															<label class="radio-inline">
+															  <input type="radio" name="art_type" id="art_rad_2" value="2">EP
+															</label>
+															<label class="radio-inline">
+															  <input type="radio" name="art_type" id="art_rad_2" value="2">Album
+															</label>
 											            </div>
 											        </div>
 
-												</form>
-											  </div>
+													  </div>
+													  <div class="col-xs-6">
+													  	<div class="form-group">
+													  		<div id="rel_art_example" class="alert alert-warning" role="alert">
+														      <strong>Release Artist name</strong><br> Enter the artist / band name of this release including any featuring, presents, versus artists. <br><br> Example : <br> Alhemist feat by Mister Minsk
+														    </div>
+													  	</div>
 
-											</div>
+													  </div>
+													</div>
+
+												</section>
+
+												<section>
+													<header>
+														<p>Add release details</p>
+													</header>
+													<div class="row">
+													  <div class="col-xs-6">
+
+						        						<div class="form-group">
+												            <label for="art_soc_myspace" class="control-label col-xs-12">Release Data</label>
+												            <div class="col-xs-12">
+												                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Release Data...">
+												            </div>
+												        </div>
+						        						<div class="form-group">
+												            <label for="art_soc_myspace" class="control-label col-xs-12">Release Genre</label>
+												            <div class="col-xs-12">
+												                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Release Genre...">
+												            </div>
+												        </div>
+						        						<div class="form-group">
+												            <label for="art_soc_myspace" class="control-label col-xs-12">Release Duration</label>
+												            <div class="col-xs-12">
+												                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Release Duration...">
+												            </div>
+												        </div>
+
+													  </div>
+													  <div class="col-xs-6">
+						        						<div class="form-group">
+												            <label for="art_soc_myspace" class="control-label col-xs-12">Release Artists</label>
+												            <div class="col-xs-12">
+												                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Release Artists...">
+												            </div>
+												        </div>
+						        						<div class="form-group">
+												            <label for="art_soc_myspace" class="control-label col-xs-12">Link to release</label>
+												            <div class="col-xs-12">
+												                <input type="text" class="form-control" id="art_soc_myspace" placeholder="Link to release...">
+												            </div>
+												        </div>
+
+			  											<div class="form-group">
+														    <label for="exampleInputFile"  class="control-label col-xs-12">Upload Music</label>
+														    <div  class="col-xs-12">
+															    <input id="upl_music" type="file" class="form-control" >
+														    </div>
+														</div>
+													  </div>
+													</div>
+							       					<div class="form-group">
+											            <label for="art_biography" class="control-label col-xs-4">Release description</label>
+											            <div class="col-xs-12">
+											                <textarea class="form-control" id="art_biography" rows="7"></textarea>
+											            </div>
+											        </div>
+
+													<div class="row">
+													  <div class="col-xs-7">
+				  											<div class="form-group">
+															    <label for="exampleInputFile" class="control-label col-xs-5">Release image</label>
+															    <div class="col-xs-7">
+																    <input type="file" id="exampleInputFile">
+																    <p class="help-block">Upload release image </p>
+															    </div>
+															</div>
+													  </div>
+													  <div class="col-xs-4">
+													  	<img src="images/profile.jpg" alt="..." class="img-rounded">
+													  </div>
+													</div>
+												</section>
+
+										        <div class="form-group">
+										            <div class="col-xs-4">
+										                <button type="submit" class="btn btn-primary">Promote release</button>
+										            </div>
+										        </div>
+
+											</form>
 										</article>
 
 									</div>
