@@ -1,0 +1,39 @@
+#header-wrapper #nav a{
+    font-size: 15px;
+}
+/* .form-group .input-group {
+    width: 45%;
+} */
+#profile_data .form-horizontal .control-label{
+    text-align: left;
+}
+.nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nounderline{
+    text-decoration: none;
+}
+.btn {
+    font-weight: bold;
+}
+.logged_status{
+    background: url(../images/log_status.png) no-repeat 100%;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 7px;
+}
+#rel_art_example{
+    margin-top: 25px;
+    height: 210px;
+}
+#upl_music{
+    border:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
