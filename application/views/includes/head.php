@@ -9,8 +9,8 @@
             <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style-desktop.css" >
         </noscript>
 
-        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo base_url() ?>assets/css/ie/v8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="<?php echo base_url() ?>assets/css/ie/v9.css" /><![endif]-->
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap-social.css"><!-- Bootstrap social icons -->
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/custom_styles.css"><!-- Latest compiled and minified CSS -->
@@ -25,7 +25,7 @@
         <script src="<?php echo base_url() ?>assets/js/skel-layers.min.js"></script>
         <script src="<?php echo base_url() ?>assets/js/init.js"></script>
         <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
-        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <!--[if lte IE 8]><script src="<?php echo base_url() ?>assets/css/ie/html5shiv.js"></script><![endif]-->
 
         <script src="<?php echo base_url() ?>assets/js/jquery.validate.min.js"></script>
         <script src="<?php echo base_url() ?>assets/js/additional-methods.min.js"></script>
@@ -38,4 +38,5 @@
         <script src="<?php echo base_url() ?>assets/js/custom/members/artists.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/members/promote.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/members/support.js"></script>
+        <script src="<?php echo base_url() ?>assets/js/ajaxfileupload.js"></script>
         <?php endif; ?>

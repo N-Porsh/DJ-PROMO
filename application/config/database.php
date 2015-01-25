@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'dj_promo_db';
+$db['default']['hostname'] = 'localhost'; // sql3.freemysqlhosting.net
+$db['default']['username'] = 'root'; // sql364584
+$db['default']['password'] = ''; // wM3%jC3!
+$db['default']['database'] = 'dj_promo_db'; // sql364584
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
