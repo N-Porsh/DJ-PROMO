@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
 
-    refresh_files();
+    // if current page is labels - refresh files list
+    if( $(location).attr('pathname') === '/members/labels')
+    {
+        refresh_files();
+    }
+
+
     //add title img
     $('#upload_title').submit(function(e) {
         e.preventDefault();

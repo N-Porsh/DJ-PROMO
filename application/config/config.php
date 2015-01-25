@@ -7,11 +7,21 @@
  * @param  [type] $class [description]
  * @return [type]        [description]
  */
+
+
 function __autoload($class)
 {
-    if(strpos($class, 'CI_') !== 0)
+    if (strpos($class, 'CI_') !== 0)
     {
-        @include_once( APPPATH . 'core/'. $class . EXT );
+        if (file_exists($file = APPPATH . 'core/' . $class . EXT))
+        {
+            include $file;
+        }
+
+        elseif (file_exists($file = APPPATH . 'libraries/' . $class . EXT))
+        {
+            include $file;
+        }
     }
 }
 
