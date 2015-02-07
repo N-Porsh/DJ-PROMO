@@ -9,6 +9,11 @@ class Artists extends Front_Controller {
         $this->load->view('layout_members', $data);
     }
 
+    public function add_artist()
+    {
+        $this->load->model('artists_model');
+        echo $this->artists_model->add_artist();
+    }
 }
 
 /* End of file artists.php */

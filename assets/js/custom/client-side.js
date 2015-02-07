@@ -41,16 +41,8 @@ jQuery( document ).ready(function( $ ) {
 
 				var n = noty({
 				    text: data.message,
-				    layout: 'bottomRight',
-				    theme: 'relax',
 				   	type: msgType,
-				   	timeout: 5000,
-				    animation: {
-				        open: 'flipInY', // jQuery animate function property object
-				        close: 'flipOutX', // jQuery animate function property object
-				        easing: 'swing', // easing
-				        speed: 500 // opening & closing animation speed
-				    }
+				   	timeout: 5000
 				});
 
 				if(data.status == "success"){
@@ -94,15 +86,11 @@ jQuery( document ).ready(function( $ ) {
 					//alert("incorrect username or password");
 					var n = noty({
 					    text: 'Incorrect Username or Password',
-					    layout: 'bottomRight',
-					    theme: 'relax',
 					   	type: 'error',
 					   	timeout: 4000,
 					    animation: {
 					        open: 'animated bounceInLeft', // jQuery animate function property object
-					        close: 'flipOutX', // jQuery animate function property object
-					        easing: 'swing', // easing
-					        speed: 500 // opening & closing animation speed
+					        close: 'flipOutX' // jQuery animate function property object
 					    }
 					});
 				}

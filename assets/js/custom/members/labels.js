@@ -26,7 +26,17 @@ jQuery(document).ready(function($) {
                     refresh_files();
                     $('#label_title').val('');
                 }
-                alert(data.msg);
+
+                msgType = (data.status != "success") ? "error" : "success";
+                var n = noty({
+                    text: data.msg,
+                    type: msgType,
+                    timeout: 5000,
+                    animation: {
+                        open: 'flipInY', // jQuery animate function property object
+                        close: 'flipOutX' // jQuery animate function property object
+                    }
+                });
             }
         });
         return false;

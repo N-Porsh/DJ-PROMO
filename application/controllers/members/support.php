@@ -9,6 +9,11 @@ class Support extends Front_Controller {
         $this->load->view('layout_members', $data);
     }
 
+    public function new_query()
+    {
+        $this->load->model('support_model');
+        echo $this->support_model->add_query();
+    }
 }
 
 /* End of file support.php */

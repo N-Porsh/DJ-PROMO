@@ -29,12 +29,12 @@ class Labels extends Front_Controller {
         if (empty($title))
         {
             $status = "error";
-            $msg = "Please enter a title";
+            $msg = "Please enter Label name";
         }
 
         if ($status != "error")
         {
-            $config['upload_path'] = 'files';
+            $config['upload_path'] = 'files/labels';
             $config['allowed_types'] = 'gif|jpg|png|doc|txt';
             $config['max_size'] = 1024 * 8;
             $config['encrypt_name'] = TRUE;

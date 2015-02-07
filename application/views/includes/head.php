@@ -30,7 +30,8 @@
         <script src="<?php echo base_url() ?>assets/js/jquery.validate.min.js"></script>
         <script src="<?php echo base_url() ?>assets/js/additional-methods.min.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/client-side.js"></script>
-        <script src="<?php echo base_url() ?>assets/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/js/noty/packaged/jquery.noty.packaged.js"></script>
+
 
         <?php if($this->ion_auth->logged_in()):?>
         <script src="<?php echo base_url() ?>assets/js/custom/members/profile.js"></script>

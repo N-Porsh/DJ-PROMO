@@ -4,12 +4,12 @@
         <p>If you have any questions, please contact us</p>
     </header>
 
-    <form  class="form-horizontal" >
+    <?php echo form_open('members/support/new_query','class="form-horizontal" id="sup_new_query"'); ?>
 
         <div class="form-group">
             <label for="support_topic" class="control-label col-xs-4">Topic</label>
             <div class="col-xs-7">
-                <select class="form-control" id="support_topic">
+                <select class="form-control" name="support_topic" id="support_topic">
                   <option>Choose topic</option>
                   <option>Service problem</option>
                   <option>Website bug</option>
@@ -21,7 +21,7 @@
         <div class="form-group">
             <label for="support_descr" class="control-label col-xs-4">Description <span class="text-danger">*</span></label>
             <div class="col-xs-7">
-                <textarea class="form-control" id="support_descr" rows="5"></textarea>
+                <textarea class="form-control" name="support_descr" id="support_descr" rows="5"></textarea>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-    </form>
+    <?php echo form_close(); ?>
 </article>
 
 <article id="profile_data">

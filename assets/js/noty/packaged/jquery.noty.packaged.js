@@ -496,15 +496,15 @@
     };
 
     $.noty.defaults = {
-        layout      : 'top',
-        theme       : 'defaultTheme',
+        layout      : 'bottomRight', // top
+        theme       : 'relax', // defaultTheme
         type        : 'alert',
         text        : '',
         dismissQueue: true,
         template    : '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
         animation   : {
-            open  : {height: 'toggle'},
-            close : {height: 'toggle'},
+            open  : 'animated flipInX', // jQuery animate function property object
+            close : 'flipOutX', // jQuery animate function property object
             easing: 'swing',
             speed : 500
         },

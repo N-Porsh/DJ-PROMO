@@ -39,8 +39,8 @@
 
       </div>
       <div class="tab-pane fade" id="new_artist">
-        <form class="form-horizontal" >
 
+        <?php echo form_open('members/artists/add_artist',  'id="add_artist" class="form-horizontal"'); ?>
             <section>
                 <header>
                     <p>Artist Details:</p>
@@ -48,14 +48,15 @@
                 <div class="form-group">
                     <label for="art_alias" class="control-label col-xs-4">Alias Name <span class="text-danger">*</span></label>
                     <div class="col-xs-7">
-                        <input type="text" class="form-control" id="art_alias" placeholder="Enter alias name">
+
+                        <?php echo form_input('art_alias', '', 'class="form-control" id="art_alias" placeholder="Enter alias name"'); ?>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="art_web" class="control-label col-xs-4">Website</label>
                     <div class="col-xs-7">
-                        <input type="text" class="form-control" id="art_web" placeholder="Your website URL">
+                        <?php echo form_input('art_web', '', 'class="form-control" id="art_web" placeholder="Your website URL"'); ?>
                     </div>
                 </div>
 
@@ -63,10 +64,10 @@
                     <label class="control-label col-xs-4">Type</label>
                     <div class="col-xs-7">
                         <label class="radio-inline">
-                          <input type="radio" name="art_type" id="art_rad_1" value="1">Label Artist
+                          <?php echo form_radio('art_type', 1, FALSE, 'id="art_type_1"'); ?>Label Artist
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="art_type" id="art_rad_2" value="2">Guest Remixer
+                          <?php echo form_radio('art_type', 2, FALSE, 'id="art_type_2"'); ?>Guest Remixer
                         </label>
                     </div>
                 </div>
@@ -80,42 +81,42 @@
                   <div class="col-xs-6">
 
                     <div class="form-group">
-                        <label for="art_soc_myspace" class="control-label col-xs-5">Myspace</label>
+                        <label for="art_myspace" class="control-label col-xs-5">Myspace</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control" id="art_soc_myspace" placeholder="Myspace URL">
+                            <?php echo form_input('art_myspace', '', 'class="form-control" id="art_myspace" placeholder="Myspace URL"'); ?>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="art_soc_myspace" class="control-label col-xs-5">Facebook</label>
+                        <label for="art_fb" class="control-label col-xs-5">Facebook</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control" id="art_soc_myspace" placeholder="Facebook URL">
+                            <?php echo form_input('art_fb', '', 'class="form-control" id="art_fb" placeholder="Facebook URL"'); ?>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="art_soc_myspace" class="control-label col-xs-5">YouTube</label>
+                        <label for="art_youtube" class="control-label col-xs-5">YouTube</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control" id="art_soc_myspace" placeholder="YouTube URL">
+                            <?php echo form_input('art_youtube', '', 'class="form-control" id="art_youtube" placeholder="YouTube URL"'); ?>
                         </div>
                     </div>
 
                   </div>
                   <div class="col-xs-6">
                     <div class="form-group">
-                        <label for="art_soc_myspace" class="control-label col-xs-5">SoundCloud</label>
+                        <label for="art_sc" class="control-label col-xs-5">SoundCloud</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control" id="art_soc_myspace" placeholder="SoundCloud URL">
+                            <?php echo form_input('art_sc', '', 'class="form-control" id="art_sc" placeholder="SoundCloud URL"'); ?>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="art_soc_myspace" class="control-label col-xs-5">Twitter</label>
+                        <label for="art_tw" class="control-label col-xs-5">Twitter</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control" id="art_soc_myspace" placeholder="Twitter URL">
+                            <?php echo form_input('art_tw', '', 'class="form-control" id="art_tw" placeholder="Twitter URL"'); ?>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="art_soc_myspace" class="control-label col-xs-5">Blog/RSS</label>
+                        <label for="art_rss" class="control-label col-xs-5">Blog/RSS</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control" id="art_soc_myspace" placeholder="Blog/RSS URL">
+                            <?php echo form_input('art_rss', '', 'class="form-control" id="art_rss" placeholder="Blog/RSS URL"'); ?>
                         </div>
                     </div>
                   </div>
@@ -129,24 +130,24 @@
                 <div class="form-group">
                     <label for="art_biography" class="control-label col-xs-4">biography</label>
                     <div class="col-xs-12">
-                        <textarea class="form-control" id="art_biography" rows="7"></textarea>
+                        <?php echo form_textarea('art_bio', '', 'class="form-control" id="art_biography"'); ?>
                     </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-xs-7">
-                        <div class="form-group">
-                            <label for="exampleInputFile" class="control-label col-xs-5">Artist image</label>
-                            <div class="col-xs-7">
-                                <input type="file" id="exampleInputFile">
-                                <p class="help-block">Upload artist image (optional)</p>
-                            </div>
-                        </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <img src="../assets/images/profile.jpg" alt="..." class="img-rounded">
-                  </div>
-                </div>
+<!--                 <div class="row">
+  <div class="col-xs-7">
+        <div class="form-group">
+            <label for="exampleInputFile" class="control-label col-xs-5">Artist image</label>
+            <div class="col-xs-7">
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Upload artist image (optional)</p>
+            </div>
+        </div>
+  </div>
+  <div class="col-xs-4">
+    <img src="../assets/images/profile.jpg" alt="..." class="img-rounded">
+  </div>
+</div> -->
             </section>
 
             <div class="form-group">
@@ -155,7 +156,7 @@
                 </div>
             </div>
 
-        </form>
+        <?php echo form_close(); ?>
       </div>
 
     </div>

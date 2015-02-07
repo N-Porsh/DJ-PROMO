@@ -29,7 +29,7 @@ class Labels_model extends CI_Model {
         {
             return FALSE;
         }
-        unlink('./files/' . $file->filename);
+        unlink('./files/labels/' . $file->filename);
         return TRUE;
     }
 
