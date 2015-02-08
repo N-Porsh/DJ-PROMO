@@ -12,8 +12,24 @@ class Support extends Front_Controller {
     public function new_query()
     {
         $this->load->model('support_model');
-        echo $this->support_model->add_query();
+
+        //validate
+        $this->form_validation->set_rules('support_descr', 'Description', 'trim|required|xss_clean');
+
+        if($this->form_validation->run() == TRUE)
+        {
+            $this->support_model->add_query();
+
+            $response = array('status' => 'success', 'message' => 'Your question added in query. We will inform you via e-mail');
+            echo json_encode($response);
+        }
+        else
+        {
+            $response = array('status' => 'fail', 'message' => validation_errors());
+            echo json_encode($response);
+        }
     }
+
 }
 
 /* End of file support.php */
