@@ -2,6 +2,13 @@
 
 class Artists extends Front_Controller {
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('artists_model');
+    }
+
+
     public function index()
     {
         $data['title'] = "DJ-Promo Artists";
@@ -9,9 +16,17 @@ class Artists extends Front_Controller {
         $this->load->view('layout_members', $data);
     }
 
+
+    public function all_artists()
+    {
+        $data = $this->artists_model->get_artists();
+        echo json_encode(array('data' => $data));
+    }
+
+
     public function add_artist()
     {
-        $this->load->model('artists_model');
+        //$this->load->model('artists_model');
 
         $added_by = $this->session->userdata('user_id');
 

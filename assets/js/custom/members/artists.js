@@ -1,5 +1,17 @@
 jQuery(document).ready(function($) {
 
+    var dt_artists = $('#dt_artists').DataTable({
+        //processing: true,
+        //serverSide: true,
+        searching: false,
+        lengthChange: false,
+        ajax: "artists/all_artists",
+        columns: [
+            { "data": "id" },
+            { "data": "alias_name" }
+        ]
+    });
+
     /*
     * Artist validator:
     */
@@ -35,7 +47,7 @@ jQuery(document).ready(function($) {
                     'csrf_token' : $('input[name="csrf_token"]').val()
                 },
                 success: function(data, status) {
-
+                    dt_artists.ajax.reload(); // refresh table data
                     msgType = (data.status != "success") ? "error" : "success";
                     var n = noty({
                         text: data.msg,

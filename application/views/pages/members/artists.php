@@ -14,28 +14,16 @@
     <div class="tab-content">
         <br>
       <div class="tab-pane fade in active" id="artists">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Artist name</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Bixxy</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Frik</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Tiesto</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row-fluid">
+            <table id="dt_artists" class="table  table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Artist Name</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
 
       </div>
       <div class="tab-pane fade" id="new_artist">
@@ -140,7 +128,7 @@
                             <label for="art_img" class="control-label col-xs-5">Artist image</label>
                             <div class="col-xs-7">
                                 <input type="file" name="art_img" id="art_img">
-                                <p class="help-block">Upload artist image (optional)</p>
+                                <p class="help-block">Upload artist image (optional) <b>2MB</b> max</p>
                             </div>
                         </div>
                   </div>

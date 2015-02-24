@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
         //serverSide: true,
         searching: false,
         lengthChange: false,
-        ajax: "labels/files",
+        ajax: "labels/all_labels",
         columns: [
             { "data": "title" },
             { "data": "filename" }

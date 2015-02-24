@@ -29,9 +29,8 @@
         </div>
 
     <?php echo form_close(); ?>
-    <h4>files:</h4>
-
     <div class="row-fluid">
+    <h4>files:</h4>
         <table id="dt_labels" class="table  table-hover">
             <thead>
                 <tr>

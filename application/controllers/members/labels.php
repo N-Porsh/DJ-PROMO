@@ -18,6 +18,13 @@ class Labels extends Front_Controller {
         $this->load->view('layout_members', $data);
     }
 
+    public function all_labels()
+    {
+        $files = $this->labels_model->get_labels();
+        echo json_encode(array('data' => $files));
+    }
+
+
     public function upload_file()
     {
         $status = "";
@@ -68,11 +75,6 @@ class Labels extends Front_Controller {
         echo json_encode(array('status' => $status, 'msg' => $msg));
     }
 
-    public function files()
-    {
-        $files = $this->labels_model->get_labels();
-        echo json_encode(array('data' => $files));
-    }
 
     public function delete_file($file_id)
     {

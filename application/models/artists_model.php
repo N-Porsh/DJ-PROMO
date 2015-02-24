@@ -8,6 +8,14 @@ class Artists_model extends CI_Model {
         return $this->db->insert_id();
     }
 
+    public function get_artists()
+    {
+        return $this->db->select()
+          ->from('artists')
+          ->get()
+          ->result();
+    }
+
 }
 
 /* End of file artists_model.php */
