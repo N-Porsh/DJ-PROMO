@@ -35,9 +35,10 @@ class Labels extends Front_Controller {
         if ($status != "error")
         {
             $config['upload_path'] = 'files/labels';
-            $config['allowed_types'] = 'gif|jpg|png|doc|txt';
+            $config['allowed_types'] = 'gif|jpg|png';
             $config['max_size'] = 1024 * 8;
             $config['encrypt_name'] = TRUE;
+            $config['remove_spaces'] = TRUE;
 
             $this->load->library('upload', $config);
 
@@ -59,7 +60,7 @@ class Labels extends Front_Controller {
                 {
                     unlink($data['full_path']);
                     $status = "error";
-                    $msg = "Something went wrong when saving the file, please try again.";
+                    $msg = "Something went wrong while saving the file, please try again.";
                 }
             }
             @unlink($_FILES[$file_element_name]);
@@ -70,8 +71,7 @@ class Labels extends Front_Controller {
     public function files()
     {
         $files = $this->labels_model->get_labels();
-        echo json_encode(array('files' => $files));
-        //$this->load->view('files', array('files' => $files));
+        echo json_encode(array('data' => $files));
     }
 
     public function delete_file($file_id)

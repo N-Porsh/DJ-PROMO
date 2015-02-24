@@ -11,11 +11,12 @@
 
         <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo base_url() ?>assets/css/ie/v8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="<?php echo base_url() ?>assets/css/ie/v9.css" /><![endif]-->
-        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap-social.css"><!-- Bootstrap social icons -->
-        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/custom_styles.css"><!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.css"><!-- Latest compiled and minified CSS -->
-
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/custom_styles.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.css">
+        <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dataTables.bootstrap.css">
+        <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css"> -->
 
 
         <!-- JS: -->
@@ -34,10 +35,14 @@
 
 
         <?php if($this->ion_auth->logged_in()):?>
+        <!-- pages -->
         <script src="<?php echo base_url() ?>assets/js/custom/members/profile.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/members/labels.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/members/artists.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/members/promote.js"></script>
         <script src="<?php echo base_url() ?>assets/js/custom/members/support.js"></script>
+        <!-- libs -->
+        <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
         <script src="<?php echo base_url() ?>assets/js/ajaxfileupload.js"></script>
+        <script src="<?php echo base_url() ?>assets/js/custom/dataTables.bootstrap.js"></script>
         <?php endif; ?>

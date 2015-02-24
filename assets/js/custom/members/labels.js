@@ -1,13 +1,28 @@
 jQuery(document).ready(function($) {
 
+
+    var dt_labels = $('#dt_labels').DataTable({
+        processing: true,
+        //serverSide: true,
+        searching: false,
+        lengthChange: false,
+        ajax: "labels/files",
+        columns: [
+            { "data": "title" },
+            { "data": "filename" }
+        ]
+    });
+
     // if current page is labels - refresh files list
-    if( $(location).attr('pathname') === '/members/labels')
+/*    if( $(location).attr('pathname') === '/members/labels')
     {
+
         refresh_files();
-    }
+
+    }*/
 
 
-    //add title img
+    //add albel
     $('#upload_title').submit(function(e) {
         e.preventDefault();
 
@@ -21,9 +36,9 @@ jQuery(document).ready(function($) {
                 'csrf_token': $('input[name="csrf_token"]').val()
             },
             success: function(data, status) {
+
                 if (data.status != 'error') {
-                    $('#files').html('<p>Reloading files...</p>');
-                    refresh_files();
+                    dt_labels.ajax.reload(); // refresh table data
                     $('#label_title').val('');
                 }
 
@@ -31,25 +46,16 @@ jQuery(document).ready(function($) {
                 var n = noty({
                     text: data.msg,
                     type: msgType,
-                    timeout: 5000,
-                    animation: {
-                        open: 'flipInY', // jQuery animate function property object
-                        close: 'flipOutX' // jQuery animate function property object
-                    }
+                    timeout: 5000
                 });
             }
         });
         return false;
     });
 
-    function refresh_files() {
-        $.get('labels/files')
-            .success(function(data) {
-                $('#files').html(data);
-            });
-    }
 
-    // delete title img
+
+    //TODO delete title img
     $('.delete_file_link').on('click', function(e) {
         e.preventDefault();
         if (confirm('Are you sure you want to delete this file?')) {

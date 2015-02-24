@@ -56,7 +56,7 @@
                 <div class="form-group">
                     <label for="art_web" class="control-label col-xs-4">Website</label>
                     <div class="col-xs-7">
-                        <?php echo form_input('art_web', '', 'class="form-control" id="art_web" placeholder="Your website URL"'); ?>
+                        <?php echo form_input('art_web', '', 'class="form-control" id="art_web" placeholder="Website URL"'); ?>
                     </div>
                 </div>
 
@@ -64,10 +64,10 @@
                     <label class="control-label col-xs-4">Type</label>
                     <div class="col-xs-7">
                         <label class="radio-inline">
-                          <?php echo form_radio('art_type', 1, FALSE, 'id="art_type_1"'); ?>Label Artist
+                          <?php echo form_radio('art_type', 1, FALSE, 'id="art_type"'); ?>Label Artist
                         </label>
                         <label class="radio-inline">
-                          <?php echo form_radio('art_type', 2, FALSE, 'id="art_type_2"'); ?>Guest Remixer
+                          <?php echo form_radio('art_type', 2, FALSE, 'id="art_type"'); ?>Guest Remixer
                         </label>
                     </div>
                 </div>
@@ -130,24 +130,24 @@
                 <div class="form-group">
                     <label for="art_biography" class="control-label col-xs-4">biography</label>
                     <div class="col-xs-12">
-                        <?php echo form_textarea('art_bio', '', 'class="form-control" id="art_biography"'); ?>
+                        <?php echo form_textarea('art_bio', '', 'class="form-control" id="art_bio"'); ?>
                     </div>
                 </div>
 
-<!--                 <div class="row">
-  <div class="col-xs-7">
-        <div class="form-group">
-            <label for="exampleInputFile" class="control-label col-xs-5">Artist image</label>
-            <div class="col-xs-7">
-                <input type="file" id="exampleInputFile">
-                <p class="help-block">Upload artist image (optional)</p>
-            </div>
-        </div>
-  </div>
-  <div class="col-xs-4">
-    <img src="../assets/images/profile.jpg" alt="..." class="img-rounded">
-  </div>
-</div> -->
+                <div class="row">
+                  <div class="col-xs-7">
+                        <div class="form-group">
+                            <label for="art_img" class="control-label col-xs-5">Artist image</label>
+                            <div class="col-xs-7">
+                                <input type="file" name="art_img" id="art_img">
+                                <p class="help-block">Upload artist image (optional)</p>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <img src="../assets/images/profile.jpg" alt="..." class="img-rounded">
+                  </div>
+                </div>
             </section>
 
             <div class="form-group">

@@ -20,7 +20,7 @@ class Support extends Front_Controller {
         {
             $this->support_model->add_query();
 
-            $response = array('status' => 'success', 'message' => 'Your question added in query. We will inform you via e-mail');
+            $response = array('status' => 'success', 'message' => 'Your message added in query. We will inform you via e-mail');
             echo json_encode($response);
         }
         else

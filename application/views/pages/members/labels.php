@@ -30,35 +30,15 @@
 
     <?php echo form_close(); ?>
     <h4>files:</h4>
-     <div id="files"></div>
 
-    <?php
-    if (isset($files) && count($files))
-    {
-        ?>
-            <ul>
-                <?php
-                foreach ($files as $file)
-                {
-                    ?>
-                    <li class="image_wrap">
-                        <a href="#" class="delete_file_link" data-file_id="<?php echo $file['id']?>">Delete</a>
-                        <strong><?php echo $file['title']?></strong>
-                        <br />
-                        <?php echo $file['filename']?>
-                    </li>
-                    <?php
-                }
-                ?>
-            </ul>
-        </form>
-        <?php
-    }
-    else
-    {
-        ?>
-        <p>No Files Uploaded</p>
-        <?php
-    }
-    ?>
+    <div class="row-fluid">
+        <table id="dt_labels" class="table  table-hover">
+            <thead>
+                <tr>
+                    <th>Label Name</th>
+                    <th>File Name</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
 </article>

@@ -1,9 +1,7 @@
 jQuery(document).ready(function($) {
-    // INIT ALWAYS:
-    $('.toolt').tooltip();
 
     /*
-    * Registration validator:
+    * Artist validator:
     */
     jQuery.validator.setDefaults({ debug: true, success: "valid" });
     // edit user
@@ -18,26 +16,33 @@ jQuery(document).ready(function($) {
         },
         submitHandler: function() {
 
-            $.ajax({
+            $.ajaxFileUpload({
                 url: 'artists/add_artist',
-                type: 'POST',
-                //dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-                data: $('#add_artist').serialize() ,
-            })
-            .done(function(msg) {
-                    var data = JSON.parse(msg);
-                    var msgType = "error";
+                secureuri: true,
+                fileElementId: 'art_img',
+                dataType: 'json',
+                data: {
+                    'art_alias'  : $('#art_alias').val(),
+                    'art_web'    : $('#art_web').val(),
+                    'art_type'   : $('input[name=art_type]:checked', '#add_artist').val(),
+                    'art_myspace': $('#art_myspace').val(),
+                    'art_fb'     : $('#art_fb').val(),
+                    'art_youtube': $('#art_youtube').val(),
+                    'art_sc'     : $('#art_sc').val(),
+                    'art_tw'     : $('#art_tw').val(),
+                    'art_rss'    : $('#art_rss').val(),
+                    'art_bio'    : $('#art_bio').val(),
+                    'csrf_token' : $('input[name="csrf_token"]').val()
+                },
+                success: function(data, status) {
 
                     msgType = (data.status != "success") ? "error" : "success";
-
                     var n = noty({
-                        text: data.message,
+                        text: data.msg,
                         type: msgType,
                         timeout: 5000
                     });
-            })
-            .fail(function() {
-                console.log("error");
+                }
             });
 
         }
